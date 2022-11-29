@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    card_view:cardElevation="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/item_user_id_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="person_id_label"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/patient_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B3FFED"
+            android:padding="10dp"
+            android:text="sample"
+            android:textColor="#3F51B5"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/patient_perscr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B3FFED"
+            android:padding="10dp"
+            android:text="sample"
+            android:textColor="#3F51B5" />
+
+        <TextView
+            android:id="@+id/patiebt_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B3FFED"
+            android:padding="10dp"
+            android:text="sample" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#000" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

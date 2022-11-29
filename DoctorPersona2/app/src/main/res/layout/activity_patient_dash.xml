@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall2"
+    tools:context=".PatientDash">
+
+    <Button
+        android:id="@+id/Exit_button"
+        android:layout_width="100dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/design_default_color_error"
+        android:onClick="Exit"
+        android:text="@string/exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Appointment_button" />
+
+    <Button
+        android:id="@+id/Appointment_button"
+        android:layout_width="234dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:onClick="Appointment"
+        android:text="@string/make_appointment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Prescription_button" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="310dp"
+        android:layout_height="53dp"
+        android:text="@string/upcoming_appointments"
+        android:textColor="#0099CC"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Prescription_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <Button
+        android:id="@+id/Prescription_button"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="336dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="@string/prescription"
+        android:onClick="Prescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/NameData_textView"
+        android:layout_width="309dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="14dp"
+        android:hint="Display name"
+        app:layout_constraintBottom_toTopOf="@+id/TimeData_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/TimeData_textView"
+        android:layout_width="309dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Display time"
+        app:layout_constraintBottom_toTopOf="@+id/DateData_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/DateData_textView"
+        android:layout_width="309dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Display date"
+        app:layout_constraintBottom_toTopOf="@+id/ReasonData_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ReasonData_textView"
+        android:layout_width="309dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="14dp"
+        android:hint="Display reason"
+        app:layout_constraintBottom_toTopOf="@+id/Prescription_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

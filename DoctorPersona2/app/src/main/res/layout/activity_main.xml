@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall2"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/DoctorLogin_Button"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:onClick="DoctorLogin"
+        android:text="Doctor Login"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/PatientLogin_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:onClick="PatientLogin"
+        android:text="Patient Login"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/DoctorLogin_Button"
+        app:layout_constraintTop_toBottomOf="@+id/DoctorLogin_Button" />
+
+    <Button
+        android:id="@+id/Register_button"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:onClick="RegisterView"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/PatientLogin_button"
+        app:layout_constraintStart_toStartOf="@+id/PatientLogin_button"
+        app:layout_constraintTop_toBottomOf="@+id/PatientLogin_button" />
+
+    <Button
+        android:id="@+id/Calendar_button"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:onClick="CalendarView"
+        android:text="Calendar"
+        android:textColor="#FAF8F8"
+        app:layout_constraintEnd_toEndOf="@+id/Register_button"
+        app:layout_constraintStart_toStartOf="@+id/Register_button"
+        app:layout_constraintTop_toBottomOf="@+id/Register_button" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="62dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/DoctorLogin_Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon1" />
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="62dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv"
+        app:layout_constraintStart_toStartOf="@+id/iv"
+        app:layout_constraintTop_toBottomOf="@+id/iv"
+        app:srcCompat="@drawable/icon2" />
+
+    <ImageView
+        android:id="@+id/iv3"
+        android:layout_width="62dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv2"
+        app:layout_constraintTop_toBottomOf="@+id/iv2"
+        app:srcCompat="@drawable/icon3" />
+
+    <ImageView
+        android:id="@+id/iv4"
+        android:layout_width="62dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv3"
+        app:layout_constraintStart_toStartOf="@+id/iv3"
+        app:layout_constraintTop_toBottomOf="@+id/iv3"
+        app:srcCompat="@drawable/icon4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
